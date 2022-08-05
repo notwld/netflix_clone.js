@@ -4,22 +4,23 @@ import netflix_logo from '../assets/netflix_logo.png';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Nav() {
-  const [show, handleShow] = useState(false);
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", () => {
-  //     if (window.scrollY > 100) {
-  //       handleShow(true);
-  //     } else handleShow(false);
-  //   });
-
-  //   return () => {
-  //     window.removeEventListener("scroll");
-  //   };
-  // }, []);
+  const [navbar,setNavbar] = useState(false);
+  const changeBackground = () => {
+    console.log(window.scrollY)
+    if (window.scrollY >= 150) {
+      setNavbar(true)
+    } else {
+      setNavbar(false)
+    }
+  }
+  useEffect(() => {
+    changeBackground()
+    window.addEventListener("scroll", changeBackground)
+  })
+  
   return (
     // 
-    <header className={`.transparent`}> 
+    <header className={navbar ? "dark" : ""}> 
         <nav>
           <img
           src={netflix_logo}
