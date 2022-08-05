@@ -18,18 +18,24 @@
     display: flex;
     flex-direction: row;
     margin-top: 25px;
+    overflow-y: hidden;
+   overflow-x: scroll;
 }
+.section .grid::-webkit-scrollbar {
+    display: none;
+  }
 .section .grid .grid_item{
     margin-left: 7px;
-    background-color: rgb(43, 40, 40);
-    height: 200px;
-    width: 200px;
+    background-color: red;
+    position: relative;
+    max-width: 250px;
     /* animation: fade 1s ease-in-out infinite; */
 }
 .section .grid .grid_item img{
-    height: 200px;
-    width: 200px;
+    object-fit: contain;
+    max-width: 250px;
 }
+
 @keyframes fade{
     0%{
         opacity: 0;
