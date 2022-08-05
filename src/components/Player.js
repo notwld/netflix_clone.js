@@ -1,8 +1,7 @@
-import React,{useEffect,useState} from 'react'
+import React from 'react'
 import '../stylesheets/Player.css';
 import ReactPlayer from 'react-player'
 export default function Player() {
-    const [files,setFiles] = useState([]);
     
 
   return (

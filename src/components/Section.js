@@ -8,26 +8,21 @@ export default function Section(props) {
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get(props.fetch);
-      console.log(request);
       setMovies(request.data.results);
       return request;
     }
     fetchData();
   }, [props.fetch]);
-  const handleClick = (id)=>{
-    const movie = movies.find(movie => movie.id === id);
-    console.log(movie);
-    
   
-  }
+
   return (
     <div className='section'>
       <h1>{props.category}</h1>
       <div className='grid'>
         {movies.map((movie) => (
-      <div className='grid_item' onClick={handleClick(movie.id)}>
+      <div className='grid_item' >
           <div className='grid_img'>
-            <img  src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`} alt={movie.title}/>
+            <img src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`} alt={movie.title}/>
           </div>
         </div>   
         ))}  

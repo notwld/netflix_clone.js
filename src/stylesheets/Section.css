@@ -25,15 +25,25 @@
     display: none;
   }
 .section .grid .grid_item{
-    margin-left: 7px;
+    margin-right: 7px;
     background-color: red;
     position: relative;
     max-width: 250px;
+    transition: all .2s ease-in-out;
     /* animation: fade 1s ease-in-out infinite; */
 }
 .section .grid .grid_item img{
     object-fit: contain;
     max-width: 250px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.section .grid .grid_item img:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+.section .grid .grid_item:hover{
+    background-color: transparent;
 }
 
 @keyframes fade{
