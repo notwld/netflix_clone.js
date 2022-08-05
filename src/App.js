@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <Nav/>
       <Banner/>
+      <Section category='Netflix Orignals' fetch={request.fetchNetflixOriginals}/>
       <Section category='Trending' fetch={request.fetchTrending}/>
       <Section category='Top 10' fetch={request.fetchTopRated}/>
       <Section category='Horror' fetch={request.fetchHorrorMovies}/>

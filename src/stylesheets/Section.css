@@ -24,7 +24,11 @@
     background-color: rgb(43, 40, 40);
     height: 200px;
     width: 200px;
-    animation: fade 1s ease-in-out infinite;
+    /* animation: fade 1s ease-in-out infinite; */
+}
+.section .grid .grid_item img{
+    height: 200px;
+    width: 200px;
 }
 @keyframes fade{
     0%{
