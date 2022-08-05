@@ -1,3 +1,4 @@
+# https://netlfix-clone-blurryface.netlify.app (check player at profile link(coolest player ngl))
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
