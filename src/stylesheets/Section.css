@@ -40,12 +40,49 @@
 }
 .section .grid .grid_item img:hover{
     transform: scale(1.1);
-    opacity: 0.9;
+    opacity: 0.7;
 }
+
 .section .grid .grid_item:hover{
     background-color: transparent;
 }
+.section .grid .grid_item .grid_content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.section .grid .grid_item .grid_content h2{
+    color: white;
+    font-size: 1.6vw;
+    margin-left: 0.5vw;
+    margin-top: 0.5vw;
+    margin-right: 0.5vw;
+    
+}
+.active{
+    display: block;
+}
+.section .grid .grid_item .grid_content p{
+    color: white;
+    font-size: 0.8em;
+    margin-left: 0.5vw;
+    margin-top: 0.1vw;
+    margin-right: 0.5vw;
+}
+.section .grid .grid_item .grid_content span{
+    margin-top: 0.7vw;
+    font-size: 0.8em;
+    color: white;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+.section .grid .grid_item .grid_content .additional_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
+}
 @keyframes fade{
     0%{
         opacity: 0;
