@@ -17,7 +17,7 @@ export default function Banner() {
                 src={broly_logo}
             />
             <span>
-            In this darkly funny drama, a young woman and her mother concoct a haphazard plot to teach her mercurial husband a lesson.
+            Earth is at peace after The Tournament of Power but Goku continues to train, knowing there are ever-stronger forces in the universe. With the arrival of a Saiyan warrior named Broly, Goku and Vegeta face their most dangerous challenge yet.
             </span>
             </div>
             <div className='banner_btn'>

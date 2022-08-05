@@ -1,6 +1,6 @@
 header{
     display: flex;
-    width: 90vw;
+    width: 100%;
     padding: 1% 4%;
     justify-content: space-between;
     transition-timing-function: ease-in;
@@ -45,9 +45,9 @@ nav ul li{
     padding-inline-start: 40px;
     cursor: pointer;
 }
-/* .secondary-nav{
+.secondary-nav{
     margin-right: 6em;
-} */
+}
 .secondary-nav ul{
     display: flex;
     flex-direction: row;

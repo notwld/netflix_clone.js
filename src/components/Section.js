@@ -1,5 +1,7 @@
 import React from 'react'
 import '../stylesheets/Section.css';
+import axios from "./tools/axios";
+import requests from "./tools/request";
 
 
 export default function Section(props) {
