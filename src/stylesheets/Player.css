@@ -1,0 +1,22 @@
+.player{
+    display: block!important;
+    width: 100vw;
+    height: 100vh;
+    background-color: #121212;
+    position: absolute;
+    top: 0;	
+    left: 0;
+}
+
+.player h1{
+    margin: 2% 4%;
+    color: white;
+    position: absolute;
+}
+.player video{
+    position :absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}

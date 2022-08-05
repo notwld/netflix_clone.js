@@ -1,8 +1,6 @@
 import React from 'react'
 import '../stylesheets/Banner.css';
-import broly from '../assets/broly.jpg';
 import broly_logo from '../assets/broly_logo.png';
-// import ReactPlayer from 'react-player'
 
 export default function Banner() {
     // const [count, handlecount] = useState(0);
@@ -17,6 +15,7 @@ export default function Banner() {
             <div className='banner_details'>
             <img 
                 src={broly_logo}
+                alt="broly_logo"
             />
             <span>
             Earth is at peace after The Tournament of Power but Goku continues to train, knowing there are ever-stronger forces in the universe. With the arrival of a Saiyan warrior named Broly, Goku and Vegeta face their most dangerous challenge yet.

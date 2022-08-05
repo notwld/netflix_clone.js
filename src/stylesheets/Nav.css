@@ -45,8 +45,14 @@ nav ul li{
     padding-inline-start: 40px;
     cursor: pointer;
 }
+
 .secondary-nav{
     margin-right: 6em;
+}
+.secondary-nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
 }
 .secondary-nav ul{
     display: flex;

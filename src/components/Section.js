@@ -1,15 +1,11 @@
 import React,{useEffect,useState} from 'react'
 import '../stylesheets/Section.css';
 import axios from "./tools/axios";
-import requests from "./tools/request";
 
 
 export default function Section(props) {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
-    // if [], run once when row loads, and don't run again
-    // if variable passed [movies] dependency whenever movies changes so this runs
-
     async function fetchData() {
       const request = await axios.get(props.fetch);
       console.log(request);

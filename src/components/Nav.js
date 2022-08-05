@@ -1,7 +1,8 @@
 import React, {useState, useEffect  } from 'react'
 import '../stylesheets/Nav.css';
 import netflix_logo from '../assets/netflix_logo.png';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { BrowserRouter as Router, Route, Routes,Link } from 'react-router-dom'
+import Player from './Player';
 
 export default function Nav() {
   const [navbar,setNavbar] = useState(false);
@@ -19,7 +20,7 @@ export default function Nav() {
   })
   
   return (
-    // 
+    <Router>
     <header className={navbar ? "dark" : ""}> 
         <nav>
           <img
@@ -38,10 +39,15 @@ export default function Nav() {
           <ul>
             <li>Search</li>
             <li>Bell</li>
-            <li>Profile</li>
+            <li><Link to='/player'>Profile</Link></li>
+            <Routes>
+            <Route path='/player' element={<Player/>} />        
+            </Routes>
+            
           </ul>
         </div>
       </header>
+      </Router>
   )
 }
 
