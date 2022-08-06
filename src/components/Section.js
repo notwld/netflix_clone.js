@@ -68,7 +68,7 @@ export default function Section(props) {
             <p>{turncate(movie.overview,130) || turncate(movie.description,130) || turncate(movie.synopsis,130)}</p>
             {/* <p>{movie.overview || movie.description}</p> */}
             <div className='additional_content'>
-            <span>Released Date: {movie.release_date || movie.first_air_date}</span>
+            <span>Release Date: {movie.release_date || movie.first_air_date}</span>
             <span>Rating: {String(movie.vote_average).slice(.2)}</span>
             </div>
             </div>
