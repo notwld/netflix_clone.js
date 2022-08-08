@@ -137,19 +137,19 @@
         margin-bottom: 2vw;
     }
     .section .grid .grid_item .grid_content h2{
-        font-size: 5vw!important;
-    margin-left: 2.5vw!important;
-    margin-top: 2.5vw!important;
-    margin-right: 2.5vw!important;
+        font-size: 2vw!important;
+    margin-left: 2vw!important;
+    margin-top: 2vw!important;
+    margin-right: 2vw!important;
     }
     .section .grid .grid_item .grid_content .additional_content{
-        margin-top: 2.5vw!important;
-        margin-left: 2.5vw!important;
+        margin-top: 2vw!important;
+        margin-left: 2vw!important;
 
     }
     .section .grid .grid_item .grid_content p{
-        margin-left: 2.5vw!important;
-        margin-top: 2.5vw!important;
-        margin-right: 2.5vw!important;
+        margin-left: 2vw!important;
+        margin-top: 2vw!important;
+        margin-right: 2vw!important;
     }
 }
