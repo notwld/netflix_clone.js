@@ -110,4 +110,30 @@
         opacity: 0;
     }
 }
-    
+
+@media screen and (max-width: 869px)  {
+    .section{
+        padding: 0;
+        width: 100vw!important;
+        height: 100vh!important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .section h1{
+        font-size: 5vw!important;
+        position: relative!important;
+        top: 1%;
+    }
+    .section .grid{
+        position: relative;
+        flex-direction: column!important;
+        overflow: auto!important;  
+        height: fit-content!important; 
+    }
+    .section .grid .grid_item{
+        margin-bottom: 2vw;
+    }
+}
